@@ -1,0 +1,15 @@
+{
+    // comment23... even though, this json file is unformatted
+
+    /* looks like in human readable format ===> our json5 npmjs package ====> will properly convert it into JSON file */
+
+    unquoted: 'and you can quote me on that',
+    singleQuotes: 'I can use "double quotes" here',
+    lineBreaks: "Look, Mom! \
+  No \\n's!",
+    hexadecimal: 0xdecaf,
+    leadingDecimalPoint: .8675309, andTrailing: 8675309.,
+    positiveSign: +1,
+    trailingComma: 'in objects', andIn: ['RMA', 'Atleti', 'Barca',],
+    "backwardsCompatible": "with JSON",
+  }
