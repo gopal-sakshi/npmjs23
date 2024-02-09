@@ -1,8 +1,6 @@
 /*
     https://betterstack.com/community/guides/logging/how-to-install-setup-and-use-pino-to-log-node-js-applications/
 
-
-
 */
 
 const pino = require('pino');
@@ -35,6 +33,12 @@ const pinoFile24 = pino({
     // }),
     redact: ['club23.phoneNo', 'club23.accountNo']
 }, pino.destination("loggers24/pinoDestLog.log"))
+
+/*
+    pino ---> fileTransport vs destination
+    - destination runs in main thread
+    - https://github.com/pinojs/pino/blob/master/docs/transports.md
+*/
 
 module.exports = {
     pino23: pino23,

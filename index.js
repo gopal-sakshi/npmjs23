@@ -19,6 +19,12 @@ app.use('/clsRtracer23', require('./packages23/cls-rtracer23'));
 // loggers - pino, winston, morgan, npmlog
 app.use('/loggers23', require('./packages23/loggerPackages23'));
 
+// lru-cache
+app.use('/lru23', require('./packages23/lru-cache23'));
+
+
+app.use('/cors23', require('./middleware23/cors11'));
+// app.use('/joi23', require('./middleware23/joi23'));          // it has ERRORS
 /*****************************************************/
 app.get('/path1', (req, res) => {
     debug('base path');
