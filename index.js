@@ -2,7 +2,7 @@ const express = require('express');
 const debug = require('debug');
 var bodyParser = require('body-parser');
 const app = express();
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 app.listen(3033, (err) => { console.log('listening on 3033'); });
 
 
