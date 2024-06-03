@@ -34,6 +34,9 @@ app.use('/cors23', require('./middleware23/cors11'));
 app.use('/excel23', require('./packages23/exceljs23'));
 app.use('/xlsx23', require('./packages23/xlsx23'))
 
+
+// prom-client
+app.use('/prom23', require('./packages23/prom-client23'));
 /*****************************************************/
 app.get('/path1', (req, res) => {
     debug('base path');

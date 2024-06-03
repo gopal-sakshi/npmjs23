@@ -1,0 +1,20 @@
+Golden signals of monitoring
+
+latency
+- time it takes to service a request
+- break latency by ----> latency of successful requests & failed requests
+
+traffic
+- how much demand is being placed on your system
+- number of HTTP requests per second
+    break the traffic by ----> serving === static content vs dynamic content
+
+errors
+- rate of requests that fail
+- HTTP 500s; HTTP 200 but wrong content
+
+saturation
+- how full your service is
+- memory constrained (or) I/O constrained
+- can you service handle 
+    double the traffic; handle only 10% more traffic
