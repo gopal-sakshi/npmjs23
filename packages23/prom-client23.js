@@ -14,7 +14,7 @@ collectDefaultMetrics({
 });
 
 const http_request_counter23 = new client.Counter({
-    name: 'enni_requests_vachaayi',
+    name: 'enni_requests_vachaayi_sum',         // total (or) sum (or) count (or) bucket tho end avvaali
     help: 'Count of HTTP requests made to my app',
     labelNames: ['method', 'route', 'statusCode'],
 });
