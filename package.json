@@ -4,7 +4,8 @@
   "description": "This repo will have implementations of some useful npmjs packages",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test23": "mocha chai23/*.test.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,8 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "bunyan": "^1.8.15",
+    "chai": "4.3.6",
+    "chai-http": "^4.4.0",
     "cls-rtracer": "^2.6.3",
     "cors": "^2.8.5",
     "exceljs": "^4.4.0",
@@ -22,6 +25,7 @@
     "joi": "^17.12.0",
     "json5": "^2.2.3",
     "lru-cache": "^10.1.0",
+    "mocha": "^10.4.0",
     "morgan": "^1.10.0",
     "npmlog": "^7.0.1",
     "pino": "^8.17.2",

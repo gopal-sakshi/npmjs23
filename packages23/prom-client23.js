@@ -50,6 +50,9 @@ router11.use(function(req, res, next){
     
 });
 
+function observe (metricName, labels, value) {
+    console.log("observing metric ", metricName, labels, value)
+}
 /*******************************************************************/
 
 router11.get('/metrics', async (req, res) => {
@@ -64,9 +67,12 @@ router11.get('/football11', async (req, res) => {
 
 router11.get('/football12', async (req, res) => {
     for (let i=0; i<1e5; i++ ) {
-        for (let i=0; i<1e5; i++ ) { }
+        for (let i=0; i<1e6; i++ ) { }
     }
     res.status(404).send({info: 'football12 requested - status code is 404', time24: new Date().toISOString()})
 });
 
-module.exports = router11;
+module.exports = {
+    router11: router11,
+    observe23: observe
+};
