@@ -14,6 +14,17 @@ app.get('/movies23', async(req, res) => {
     res.status(200).send(respObj);
 });
 
+app.get('/moviesByLang/:lang23', async (req, res) => {
+    const lang23 = req.params.lang23;
+    if(lang23 == 'tamil') { res.status(422).send({ info: "we wont send tamil movies" }) }
+    else {
+        res.status(200).send({
+            movies24: ['Baahubali', 'RRR'],
+            rcvdLang: lang23
+        });
+    }
+});
+
 module.exports = { 
     app,
     stopServer: () => server23.close() 

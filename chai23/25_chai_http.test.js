@@ -37,6 +37,7 @@ chai.use(chaiHttp);
 const { app: app23, stopServer } = require('./25_chai_http');
 describe('movies24', function() {
     describe('movies24a', () => {
+        
         it('return_telugu_movies', (done) => {
             chai
                 .request(app23)
@@ -52,6 +53,21 @@ describe('movies24', function() {
                         expect(resp.body.movies23).to.be.an('array');
                         stopServer();
                         done(); 
+                    }
+                })
+        });
+
+        it('deliberate_failCase23', (done) => {
+            chai
+                .request(app23)
+                .get('/moviesByLang/tamil')
+                .end((err, resp) => {
+                    if(err) { done(err) }
+                    else {
+                        expect(resp).to.have.status(422);
+                        expect(resp.body.info).to.deep.equals('we wont send tamil movies');
+                        stopServer();
+                        done();
                     }
                 })
         })
