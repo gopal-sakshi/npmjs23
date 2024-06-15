@@ -1,7 +1,7 @@
 var chai = require('chai');
 var chaiHttp = require('chai-http');
 const expect = require('chai').expect;
-
+const assert = require('chai').assert;
 chai.use(chaiHttp);
 
 // APPROACH I       ----> manually start the express server
@@ -64,6 +64,8 @@ describe('movies24', function() {
                 .end((err, resp) => {
                     if(err) { done(err) }
                     else {
+                        assert.isAbove(resp.status, 421);
+                        assert.isBelow(resp.status, 423);
                         expect(resp).to.have.status(422);
                         expect(resp.body.info).to.deep.equals('we wont send tamil movies');
                         stopServer();

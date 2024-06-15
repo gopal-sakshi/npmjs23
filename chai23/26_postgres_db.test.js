@@ -1,8 +1,8 @@
 const { assert } = require('chai');
 const postgres = require('./26_postgres_db');
 
-
-describe('postgres_test_23', function () {
+// no need to start postgres server everytime
+describe.skip('postgres_test_23', function () {
     
     describe('## create_del_Db23', () => {
         it('createDb23', async () => {
