@@ -41,6 +41,8 @@ app.use('/xlsx23', require('./packages23/xlsx23'))
 
 // postman, pre request scripts
 app.use('/postman22', require('./packages23/postman23'));
+
+app.use('/pm2', require('./packages23/pm2_a'));
 /*****************************************************/
 app.get('/path1', (req, res) => {
     debug('base path');
