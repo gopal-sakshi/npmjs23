@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "use_pm2": "pm2 start index.js",
-    "test23": "mocha chai23/*.test.js"
+    "test23": "mocha test_mocha_and_chai23/*.test.js"
   },
   "author": "",
   "license": "ISC",

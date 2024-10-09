@@ -1,10 +1,9 @@
 const { Client, Pool, Connection } = require("pg");
 
-
 const connectionParams = {
     user             : 'postgres',
     password         : '1258',
-    host             : '10.0.54.240',
+    host             : '192.168.29.120',
     port             : 5432,
     application_name : `npmjs23_mocha_test`,
     database         : 'football'

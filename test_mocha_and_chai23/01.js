@@ -2,7 +2,7 @@ import { assert } from 'chai';
 import { expect } from 'chai';
 import { should } from 'chai';
 
-// THIS SHOULD USE chat 5.x
+// THIS SHOULD USE chai 5.x
 
 console.log("not to have property ==> ", expect({a: 1, b:2}).to.not.have.property('b'));
 

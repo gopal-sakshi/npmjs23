@@ -1,4 +1,4 @@
-const { Cube } = require('./cube23');
+const { Cube } = require('./23.cube23');
 const expect = require('chai').expect;
 
 describe('test_cube23', function () {

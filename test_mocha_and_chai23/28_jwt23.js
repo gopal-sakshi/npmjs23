@@ -2,8 +2,8 @@ const fs = require('fs');
 const jwt = require('jsonwebtoken');
 var jwtInterface = {};
 
-var privateKey = fs.readFileSync('chai23/28_privateKey.pem', 'utf8');
-var publicKey = fs.readFileSync('chai23/28_publicKey.pem', 'utf8');
+var privateKey = fs.readFileSync('test_mocha_and_chai23/28_privateKey.pem', 'utf8');
+var publicKey = fs.readFileSync('test_mocha_and_chai23/28_publicKey.pem', 'utf8');
 
 
 jwtInterface.generateToken = function(payload, expiry = "10h", algo = "RS256") {

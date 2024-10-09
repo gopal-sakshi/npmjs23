@@ -1,4 +1,4 @@
-const { dummyFn1 } = require("./async23");
+const { dummyFn1 } = require("./24_async23");
 const expect = require('chai').expect;
 const assert = require('chai').assert;
 
