@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const jwtModule = require('./28_jwt23');
+const jwtModule = require('./28_jwt');
 const setTimeoutPromise = require('util').promisify(setTimeout);
 
 describe('JWT-TOKENIZATION', () => { 
